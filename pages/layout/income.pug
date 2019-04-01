@@ -1,0 +1,36 @@
+section.income
+	.container
+		.income__men1
+			img(src="img/men1.png", alt="Человек")
+		.income__men2
+			img(src="img/men2.png", alt="Человек")
+		h4#income.sectiontitle Доходность
+		.row.justify-content-center
+			.col-xl-3.col-lg-4.col-md-6
+				.income__box
+					h6.income__title ДОХОДНОСТЬ ИГРОКА
+					p.income__text ВВЕДИТЕ ВАШ БАНК
+					form.income__form
+						.income__form-calculate
+							input.income__form-item(type="text", name="name", placeholder="000000000000")
+							button.income__form-button(type="submit") Рассчитать
+						.income__form-result
+							p.income__text БАЗОВАЯ СТАВКА
+							input.income__form-item(type="text", name="name", placeholder="000000000000")
+						.income__form-result
+							p.income__text ДОХОД ЗА МЕСЯЦ 
+							input.income__form-item(type="text", name="name", placeholder="000000000000")
+						.income__form-result
+							p.income__text ДОХОД ЗА МЕСЯЦ<br>(В РУБЛЯХ) 
+							input.income__form-item(type="text", name="name", placeholder="000000000000")
+			.col-xl-3.col-lg-4.col-md-6
+				.income__box
+					h6.income__title ДОХОДНОСТЬ ПАРТНЕРА
+					p.income__text КОЛИЧЕСТВО ЛЮДЕЙ
+					form.income__form
+						.income__form-calculate
+							input.income__form-item(type="text", name="name", placeholder="000000000000")
+							button.income__form-button(type="submit") Рассчитать
+						.income__form-result
+							p.income__text ДОХОД ЗА МЕСЯЦ<br>(В РУБЛЯХ) 
+							input.income__form-item(type="text", name="name", placeholder="000000000000")

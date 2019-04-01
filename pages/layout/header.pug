@@ -1,0 +1,71 @@
+header.header
+	.signup
+		.signup__row
+			.signup__logo
+				img.img-responsive(src="img/loggo.svg", alt="Логотип")
+			h5.signup__title Регистрация
+			form.signup__form
+				.signup__form-top
+					.signup__form-select(data-attr="tel")
+						p Телефон
+						.signup__form-select-line
+						.signup__form-select-img
+							svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='13', height='13', viewBox='0 0 13 13')
+								defs
+									path#3xa1a(d='M662.408 563.002h-.013c-2.172-.071-4.715-2.176-6.468-3.93-1.754-1.753-3.86-4.298-3.927-6.46-.025-.757 1.836-2.106 1.855-2.12.483-.336 1.02-.216 1.24.089.148.206 1.56 2.343 1.713 2.586.159.252.135.626-.064 1.002-.11.209-.472.848-.643 1.145.184.262.67.904 1.675 1.909 1.005 1.004 1.646 1.492 1.91 1.676.297-.17.936-.534 1.145-.644.37-.196.742-.22.996-.065.26.159 2.391 1.576 2.588 1.713a.74.74 0 0 1 .292.546c.02.234-.052.48-.202.696-.013.018-1.345 1.857-2.097 1.857z')
+								g
+									g(transform='translate(-652 -550)')
+										use#telsvg(fill='#fff', xlink:href='#3xa1a')
+					.signup__form-select(data-attr="mail")
+						p E-mail						
+						.signup__form-select-line
+				select.signup__form-item.signup__form-country(name="country")
+					option(value="Russia") Россия
+					option(value="Russia") Россия
+					option(value="Russia") Россия
+				input.signup__form-item.signup__form-tel.signupSelect(type="tel", name="tel", placeholder="+7 (___) ___-__-__")
+				input.signup__form-item.signup__form-mail.signupSelect(type="email", name="email", placeholder="E-mail")
+				button.button.signup__form-button(type="submit") РЕГИСТРАЦИЯ
+			a.signup__text(href="#") Log in
+	.header__fon
+		.header__fon-icon.dollar
+			img(src="img/dollar.svg", alt="Доллар")
+		.header__fon-icon.football
+			img(src="img/football.svg", alt="Мяч")
+		.header__fon-icon.ruble
+			img(src="img/ruble.svg", alt="Рубль")
+		.header__fon-icon.basketball
+			img(src="img/basketball.svg", alt="Мяч")
+	.menu
+		.container
+			.row
+				.col
+					.header__menu
+						a.header__logo(href="main.html")
+							img.img-responsive(src="img/loggo.svg", alt="Логотип")
+						nav.header__nav
+							.header__nav-burger
+								span
+								span
+								span
+							ul.header__nav-box
+								li.header__nav-item
+									a.header__nav-link(href="#about") О системе
+								li.header__nav-item
+									a.header__nav-link(href="#advantage") Преимущества
+								li.header__nav-item
+									a.header__nav-link(href="#income") Доходность
+							button.button.header__nav-button Присоединиться
+	.container
+		.row.justify-content-center
+			.col-xl-8.col-lg-10.col-md-12
+				.header__form
+					h1.header__form-title Получи ранний доступ
+					form.form
+						input.form__item(type="text", name="name", placeholder="Имя")
+						input.form__item(type="tel", name="tel", placeholder="Телефон")
+						input.form__item(type="email", name="email", placeholder="Email")
+						button.button.form__button(type="submit") Отправить
+					p.header__form-text Платформа основанная на машинном обучении и нейронной сети , которая анализирует матчи<br> в различных видах спорта и выдает прогноз на нечетный результат матча, что приводит<br> к постоянному заработку в беттинге.
+				.header__img
+					img.img-responsive(src="img/note.png", alt="Ноутбук")

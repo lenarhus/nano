@@ -1,0 +1,287 @@
+/*============================ MAINHEADER ===========================*/
+.mainheader
+	position: relative
+	padding-top: 25px
+	padding-bottom: 25px
+	background: #252831
+	z-index: 300
+	&__menu
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		width: 49px
+		height: 43px
+	&__nav
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&-box
+			display: flex
+			align-items: center
+			+r(768)
+				position: fixed
+				display: block
+				padding-top: 40%
+				width: 100%
+				height: 100vh
+				left: -100%
+				top: 0
+				background: darken(#ccc, 70%)
+				transition: left .3s
+				z-index: 200
+				.header__nav-link
+					display: block
+					width: 100%
+					height: 100%
+					padding: 10px
+					text-align: center
+					transition: background .3s
+					&:hover
+						background: $main
+					&:hover::after
+						width: 0
+		.analize__box
+			+r(768)
+				display: flex
+				position: relative
+				padding-top: 0
+				width: auto
+				height: auto
+				left: 0
+				border-radius: 5px
+		&-item
+			margin: 0 8px
+			+r(992)
+				margin: 0 4px
+		&-link
+			display: block
+			position: relative
+			font-family: $default-font
+			font-size: 0.85rem
+			font-weight: bold
+			color: #fff
+			transition: color .3s
+			&:after
+				+pseudo
+				width: 0
+				height: 3px
+				bottom: -10px
+				left: 50%
+				background: #fff
+				border-radius: 2px
+				transform: translateX(-50%) 
+				transition: width .3s
+			&:hover
+				color: darken(#fff, 10%)
+			&:hover::after
+				width: 100%
+			&-teach
+				display: flex
+				align-items: center
+				padding: 8px 10px
+				background: #1C1E26
+				border-radius: 5px
+				img
+					margin-right: 10px
+				p
+					padding-top: 2px
+				&:after
+					display: none
+		&-button
+			margin-left: 8px
+			padding: 0 15px
+			font-family: $default-font
+			font-weight: bold
+			font-size: 0.8rem
+			+r(768)
+				margin-left: 0
+			+r(480)
+				padding: 5px
+				font-size: 0.6rem	
+	&__time
+		position: relative
+		display: flex
+		align-items: center
+		margin: 0 12px
+		+r(768)
+			margin: 0 0
+			margin-left: 12px
+		&:after
+			+pseudo
+			width: 0
+			height: 18px
+			top: 4px
+			right: -13px
+			border: 1px solid #979797
+			opacity: 0.45
+			+r(992)
+				opacity: 0
+		&-icon
+			width: 15px
+			height: 15px
+			+r(992)
+				width: 20px
+				height: 20px
+			#header
+				+r(992)	
+					fill: #fff
+		&-clock
+			margin-right: 12px
+			+r(992)
+				display: none
+		&-zone
+			margin-right: 17px
+			color: #b2b2b2
+			font-size: 0.7rem
+			font-weight: 500
+			line-height: 0.8rem
+			p:last-child
+				font-size: 0.6rem
+				opacity: 0.6
+			+r(992)
+				display: none
+	&__user
+		margin: 0 12px
+		&-info
+			text-align: right
+			color: #b2b2b2
+			font-size: 0.8rem
+			font-weight: 500
+			line-height: 1rem
+			+r(992)
+				display: none
+		&-day
+			font-size: 0.7rem
+			opacity: 0.8
+			+r(768)
+				display: none
+			span
+				position: relative
+				display: inline-block
+				margin-left: 15px
+				margin-right: 5px
+				color: #fff
+				font-size: 0.8rem
+				&:before
+					+pseudo
+					width: 30px
+					height: 15px
+					top: -1px
+					left: -9px
+					border-radius: 2px
+					background: rgba(#d8d8d8, 0.06)
+			+r(992)
+				display: none
+		&-img
+			position: relative
+			margin-right: 19px
+			width: 37px
+			height: 37px
+			border-radius: 50%
+			overflow: hidden
+			&-men
+				display: block
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+			+r(992)
+				margin-right: 10px							
+		&-button
+			position: relative
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: -25px 0
+			margin-right: -15px
+			padding: 40px 0
+			width: 40px
+			height: 100%
+			cursor: pointer
+			transition: background .3s
+			&:hover
+				background: #333640
+		&-menu
+			position: absolute
+			width: 0
+			top: 100%
+			right: 0
+			background: #333640
+			overflow: hidden
+			transition: width .3s
+		&-item
+			display: flex
+			padding: 20px 10px
+			border-bottom: 1px solid #404040
+			transition: background .3s
+			cursor: pointer
+			&:hover
+				background: darken(#404040, 10%)
+			p
+				margin-left: 20px
+				color: #fff
+				font-size: 0.9rem
+//Форма входа
+.sign
+	position: fixed
+	width: 0
+	height: 100vh
+	left: 0
+	top: 0
+	background: rgba(#252831, 0.97)
+	transition: width .3s
+	z-index: 300
+	&__row
+		position: absolute
+		width: 80%
+		max-width: 270px
+		left: 50%
+		top: 50% 
+		transform: translate(-50%, -50%)
+		text-align: center
+		overflow: hidden		
+	&__logo
+		+push-auto
+		margin-bottom: 20px
+		width: 110px
+		height: 110px
+	&__form
+		width: 100%
+		&-item
+			margin-bottom: 25px
+			padding: 5px
+			width: 100%
+			color: #fff
+			background: transparent
+			outline: none
+			border: none
+			border-bottom: 1px solid #4e4e4e
+			&:focus, &:active
+				border-bottom: 1px solid #4e4e4e
+			&::placeholder
+				color: #686868
+				font-size: 1rem
+			&:first-child
+				background: url('../img/icons/name.svg') 97% 50% no-repeat
+			&:nth-child(2)
+				background: url('../img/icons/password.svg') 97% 50% no-repeat
+		&-button
+			margin-bottom: 25px
+			width: 100%
+			border-radius: 7px
+	&__text
+		color: #fff
+		font-size: 0.8rem
+		opacity: 0.16
+		transition: opacity .3s
+		&:hover
+			color: #fff
+			opacity: 0.5
+
+
+		
+		
+
+			
+			

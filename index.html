@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <!--Предупреждение: Respond.js не работает при просмотре страницы через файл://-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script >
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]
+    -->
+    <title>Nanobet</title>
+  </head>
+  <body>
+    <!--PRELOADER-->
+    <div class="preloader">
+      <div class="preloader__img"><img class="img-responsive" src="img/preloader.gif" alt="Preloader"></div>
+    </div>
+    <!--HEADER-->
+    <header class="header">
+      <div class="signup">
+        <div class="signup__row">
+          <div class="signup__logo"><img class="img-responsive" src="img/loggo.svg" alt="Логотип"></div>
+          <h5 class="signup__title">Регистрация</h5>
+          <form class="signup__form">
+            <div class="signup__form-top">
+              <div class="signup__form-select" data-attr="tel">
+                <p>Телефон</p>
+                <div class="signup__form-select-line"></div>
+                <div class="signup__form-select-img">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="13" viewBox="0 0 13 13">
+                    <defs>
+                      <path id="3xa1a" d="M662.408 563.002h-.013c-2.172-.071-4.715-2.176-6.468-3.93-1.754-1.753-3.86-4.298-3.927-6.46-.025-.757 1.836-2.106 1.855-2.12.483-.336 1.02-.216 1.24.089.148.206 1.56 2.343 1.713 2.586.159.252.135.626-.064 1.002-.11.209-.472.848-.643 1.145.184.262.67.904 1.675 1.909 1.005 1.004 1.646 1.492 1.91 1.676.297-.17.936-.534 1.145-.644.37-.196.742-.22.996-.065.26.159 2.391 1.576 2.588 1.713a.74.74 0 0 1 .292.546c.02.234-.052.48-.202.696-.013.018-1.345 1.857-2.097 1.857z"></path>
+                    </defs>
+                    <g>
+                      <g transform="translate(-652 -550)">
+                        <use id="telsvg" fill="#fff" xlink:href="#3xa1a"></use>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="signup__form-select" data-attr="mail">
+                <p>E-mail						</p>
+                <div class="signup__form-select-line"></div>
+              </div>
+            </div>
+            <select class="signup__form-item signup__form-country" name="country">
+              <option value="Russia">Россия</option>
+              <option value="Russia">Россия</option>
+              <option value="Russia">Россия</option>
+            </select>
+            <input class="signup__form-item signup__form-tel signupSelect" type="tel" name="tel" placeholder="+7 (___) ___-__-__">
+            <input class="signup__form-item signup__form-mail signupSelect" type="email" name="email" placeholder="E-mail">
+            <button class="button signup__form-button" type="submit">РЕГИСТРАЦИЯ</button>
+          </form><a class="signup__text" href="#">Log in</a>
+        </div>
+      </div>
+      <div class="header__fon">
+        <div class="header__fon-icon dollar"><img src="img/dollar.svg" alt="Доллар"></div>
+        <div class="header__fon-icon football"><img src="img/football.svg" alt="Мяч"></div>
+        <div class="header__fon-icon ruble"><img src="img/ruble.svg" alt="Рубль"></div>
+        <div class="header__fon-icon basketball"><img src="img/basketball.svg" alt="Мяч"></div>
+      </div>
+      <div class="menu">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="header__menu"><a class="header__logo" href="main.html"><img class="img-responsive" src="img/loggo.svg" alt="Логотип"></a>
+                <nav class="header__nav">
+                  <div class="header__nav-burger"><span></span><span></span><span></span></div>
+                  <ul class="header__nav-box">
+                    <li class="header__nav-item"><a class="header__nav-link" href="#about">О системе</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#advantage">Преимущества</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#income">Доходность</a></li>
+                  </ul>
+                  <button class="button header__nav-button">Присоединиться</button>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-10 col-md-12">
+            <div class="header__form">
+              <h1 class="header__form-title">Получи ранний доступ</h1>
+              <form class="form">
+                <input class="form__item" type="text" name="name" placeholder="Имя">
+                <input class="form__item" type="tel" name="tel" placeholder="Телефон">
+                <input class="form__item" type="email" name="email" placeholder="Email">
+                <button class="button form__button" type="submit">Отправить</button>
+              </form>
+              <p class="header__form-text">Платформа основанная на машинном обучении и нейронной сети , которая анализирует матчи<br> в различных видах спорта и выдает прогноз на нечетный результат матча, что приводит<br> к постоянному заработку в беттинге.</p>
+            </div>
+            <div class="header__img"><img class="img-responsive" src="img/note.png" alt="Ноутбук"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--ABOUTSYSTEM-->
+    <section class="system">
+      <div class="container">
+        <h4 class="sectiontitle" id="about">О системе</h4>
+        <div class="row">
+          <div class="col-lg-5 offset-lg-1 col-md-6 offset-mg-0">
+            <div class="system__cycle">
+              <h3 class="system__cycle-title">Система циклов NanoBet</h3>
+              <p class="system__cycle-text">Платформа основанная на машинном обучении и нейронной сети , которая анализирует матчи в различных видах спорта и выдает прогноз на нечетный результат матча, что приводит к постоянному заработку в беттинге.</p>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 col-md-6 offset-mg-0">
+            <div class="system__searching">
+              <div class="system__searching-indicate"><img src="img/indicate_anim.svg" alt="Индикация"></div>
+              <p class="system__searching-text">Подождите идет процесс анализирования</p>
+              <ul class="system__searching-block">
+                <li class="system__searching-item">
+                  <p>Подбираю матч</p>
+                  <div class="system__searching-item-check"></div>
+                </li>
+                <li class="system__searching-item">
+                  <p>Анализирую турнир</p>
+                  <div class="system__searching-item-check"></div>
+                </li>
+                <li class="system__searching-item">
+                  <p>Анализирую новостной сайт</p>
+                  <div class="system__searching-item-check"></div>
+                </li>
+                <li class="system__searching-item">
+                  <p>Подвожу итоги</p>
+                  <div class="system__searching-item-check"></div>
+                </li>
+                <li class="system__searching-item">
+                  <p>Вывожу результат на экран</p>
+                  <div class="system__searching-item-check"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--ADVANTAGE-->
+    <section class="advantage">
+      <div class="container">
+        <h4 class="sectiontitle" id="advantage">Наши преимущества</h4>
+        <p class="advantage__text">Платформа основанная на машинном обучении и нейронной сети , которая анализирует матчи в различных видах спорта и выдает прогноз на нечетный результат матча, что приводит к постоянному заработку в беттинге.</p>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="advantage__elem">
+              <div class="advantage__elem-icon"><img src="img/mortarboard.svg" alt="Иконка"></div>
+              <h5 class="advantage__elem-title">Самообучение</h5>
+              <p class="advantage__elem-text">Платформа основанная на машинном обучении и нейронной сети , которая анализирует матчи в различных видах спорта.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="advantage__elem">
+              <div class="advantage__elem-icon"><img src="img/accuracy.svg" alt="Иконка"></div>
+              <h5 class="advantage__elem-title">Точность прогнозов</h5>
+              <p class="advantage__elem-text">Платформа основанная на машинном обучении и нейронной сети , которая анализирует матчи в различных видах спорта.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="advantage__elem">
+              <div class="advantage__elem-icon"><img src="img/artificial_intelligence.svg" alt="Иконка"></div>
+              <h5 class="advantage__elem-title">Нейронная сеть</h5>
+              <p class="advantage__elem-text">Платформа основанная на машинном обучении и нейронной сети , которая анализирует матчи в различных видах спорта.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="advantage__elem">
+              <div class="advantage__elem-icon"><img src="img/money_bag.svg" alt="Иконка"></div>
+              <h5 class="advantage__elem-title">Высокий доход</h5>
+              <p class="advantage__elem-text">Платформа основанная на машинном обучении и нейронной сети , которая анализирует матчи в различных видах спорта.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--INCOME-->
+    <section class="income">
+      <div class="container">
+        <div class="income__men1"><img src="img/men1.png" alt="Человек"></div>
+        <div class="income__men2"><img src="img/men2.png" alt="Человек"></div>
+        <h4 class="sectiontitle" id="income">Доходность</h4>
+        <div class="row justify-content-center">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="income__box">
+              <h6 class="income__title">ДОХОДНОСТЬ ИГРОКА</h6>
+              <p class="income__text">ВВЕДИТЕ ВАШ БАНК</p>
+              <form class="income__form">
+                <div class="income__form-calculate">
+                  <input class="income__form-item" type="text" name="name" placeholder="000000000000">
+                  <button class="income__form-button" type="submit">Рассчитать</button>
+                </div>
+                <div class="income__form-result">
+                  <p class="income__text">БАЗОВАЯ СТАВКА</p>
+                  <input class="income__form-item" type="text" name="name" placeholder="000000000000">
+                </div>
+                <div class="income__form-result">
+                  <p class="income__text">ДОХОД ЗА МЕСЯЦ </p>
+                  <input class="income__form-item" type="text" name="name" placeholder="000000000000">
+                </div>
+                <div class="income__form-result">
+                  <p class="income__text">ДОХОД ЗА МЕСЯЦ<br>(В РУБЛЯХ) </p>
+                  <input class="income__form-item" type="text" name="name" placeholder="000000000000">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="income__box">
+              <h6 class="income__title">ДОХОДНОСТЬ ПАРТНЕРА</h6>
+              <p class="income__text">КОЛИЧЕСТВО ЛЮДЕЙ</p>
+              <form class="income__form">
+                <div class="income__form-calculate">
+                  <input class="income__form-item" type="text" name="name" placeholder="000000000000">
+                  <button class="income__form-button" type="submit">Рассчитать</button>
+                </div>
+                <div class="income__form-result">
+                  <p class="income__text">ДОХОД ЗА МЕСЯЦ<br>(В РУБЛЯХ) </p>
+                  <input class="income__form-item" type="text" name="name" placeholder="000000000000">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer__box">
+              <h2 class="footer__title">Присоединяйся к нанобет!</h2>
+              <button class="button" type="submit">Присоединяйся</button>
+              <ul class="footer__social">
+                <li class="footer__icon"><a class="footer__icon-link telegram" href="#"><img src="img/telegram.svg" alt="Telegram"></a></li>
+                <li class="footer__icon"><a class="footer__icon-link vk" href="#"><img src="img/vk.svg" alt="VK"></a></li>
+                <li class="footer__icon"><a class="footer__icon-link facebook" href="#"><img src="img/face.svg" alt="Facebook"></a></li>
+              </ul>
+              <p class="footer__text">Copyright © 2019 «НаноБет».<br>Все права защищены и охраняются законом. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--SCRIPT-->
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>new WOW().init();</script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+header.mainheader
+	.sign
+		.sign__row
+			.sign__logo
+				img.img-responsive(src="img/loggo.svg", alt="Логотип")
+			form.sign__form
+				input.sign__form-item(type="text", name="name", placeholder="Username")
+				input.sign__form-item(type="password", name="password", placeholder="Password")
+				button.button.sign__form-button(type="submit") SING IN
+			a.sign__text(href="#") Forgot Password?
+	ul.mainheader__user-menu
+		li
+			a.mainheader__user-item(href="subscribe.html")
+				img(src="img/icons/subscribe.svg", alt="Подписка")
+				p Подписка
+		li
+			a.mainheader__user-item(href="account.html")
+				img(src="img/icons/account.svg", alt="Аккаунт")
+				p Аккаунт
+		li
+			.mainheader__user-item.signin
+				img(src="img/icons/exit.svg", alt="Выход")
+				p Выход
+	.container-fluid
+		.row
+			.col
+				.mainheader__menu
+					a.mainheader__logo(href="main.html")
+						img.img-responsive(src="img/loggo.svg", alt="Логотип")
+					nav.mainheader__nav
+						.mainheader__nav-burger
+							span
+							span
+							span
+						ul.mainheader__nav-box
+							li.mainheader__nav-item
+								a.mainheader__nav-link.mainheader__nav-link-teach(href="#advantage") 
+									img(src="img/icons/teach.svg", alt="Youtube")
+									p ОБУЧЕНИЕ
+							li.mainheader__nav-item
+								a.mainheader__nav-link(href="#income") БОНУСНАЯ ПРОГРАММА
+						a.button.mainheader__nav-button(href="#") ПАРТНЕРСКАЯ ПРОГРАММА
+						.mainheader__time
+							.mainheader__time-clock
+								img(src="img/icons/clock.svg", alt="Часы")
+							.mainheader__time-zone
+								p 05.01.2019
+								p GMT +1
+							a.mainheader__time-icon(href="#")
+								svg(width='100%', height='100%', viewBox='0 0 15 15', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+									g#Symbols(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+										g#header(transform='translate(-765.000000, -35.000000)', fill='#76767B', fill-rule='nonzero')
+											g#setup(transform='translate(765.000000, 35.000000)')
+												path#Shape(d='M0,11.6668571 L0,13.332486 L4.99874322,13.332486 L4.99874322,11.6668571 L0,11.6668571 Z M0,1.66748548 L0,3.33311435 L8.33374274,3.33311435 L8.33374274,1.66748548 L0,1.66748548 Z M8.33374274,15 L8.33374274,13.3325145 L15,13.3325145 L15,11.6668857 L8.33374274,11.6668857 L8.33374274,9.99937161 L6.66625726,9.99937161 L6.66625726,15 L8.33374274,15 Z M3.33499951,5.00062839 L3.33499951,6.66625726 L0,6.66625726 L0,8.33374274 L3.33499951,8.33374274 L3.33499951,9.99937161 L4.99874322,9.99937161 L4.99874322,5.00062839 L3.33499951,5.00062839 Z M15,8.33374274 L15,6.66625726 L6.66625726,6.66625726 L6.66625726,8.33374274 L15,8.33374274 Z M10.0012282,5.00062839 L11.6649719,5.00062839 L11.6649719,3.33314291 L14.9999714,3.33314291 L14.9999714,1.66748548 L11.6650005,1.66748548 L11.6650005,0 L10.0012282,0 C10.0012282,0 10.0012282,5.00062839 10.0012282,5.00062839 Z')
+						.mainheader__user
+							.mainheader__user-info
+								p.mainheader__user-name Jonh Smith
+								p.mainheader__user-day Осталось дней: 
+									span 15
+						.mainheader__user-img
+							img.img-responsive(src="img/userfon.svg", alt="Userfon")
+							img.mainheader__user-img-men(src="img/icons/smartadmin1.png", alt="User")
+						.mainheader__user-button
+							img(src="img/icons/menu.svg", alt="Меню")
+	

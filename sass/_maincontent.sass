@@ -1,0 +1,634 @@
+/*============================ MAINCONTENT ===========================*/
+.maincontent
+	position: relative
+	display: flex
+	background: $headerbg
+	+r(1200)
+		display: block
+.leftcontent
+	width: 75px
+	background: #21232b
+	+r(1200)
+		display: none
+	&__double
+		display: none
+		z-index: 250
+		+r(1200)
+			display: block
+			width: 100%
+			.leftcontent__menu
+				display: flex
+				justify-content: center
+			.leftcontent__item
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 70px
+				height: 70px
+				svg
+					transform-origin: center center
+					transform: scale(1.3)
+	&__menu
+		width: 100%
+	&__item
+		position: relative
+		z-index: 10
+		.lock
+			position: absolute
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			z-index: 20
+	&__link
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		height: 54px
+		&:hover #sport
+			fill: url(#linearGradient-1)
+		&:hover #sportdown
+			fill: url(#linearGradient)
+		&:hover #sportdown2
+			fill: url(#linearGradient-2)
+.rightcontent
+	display: flex
+	width: 100%
+	background: $mainbg
+	+r(870)
+		flex-wrap: wrap
+		&__statistic, &__cicle, &__match
+			width: 100%
+		&__cicle
+			padding: 0 0
+			order: 0
+			border-radius: 0
+			background: $headerbg
+		&__statistic
+			order: 1
+		&__match
+			order: 2
+	&__statistic, &__match
+		padding: 16px 12px
+		width: 25%
+		height: 100%
+	&__statistic
+		height: 797px
+		overflow: scroll
+		overflow-x: hidden
+		&::-webkit-scrollbar
+			width: 8px
+			background: $mainbg
+		&::-webkit-scrollbar-thumb
+			border-radius: 4px
+			background: rgba(#fff, 0.4)		
+		+r(870)
+			height: 100%		
+	&__cicle
+		position: relative
+		width: 50%
+		height: 100%
+		padding: 25px 20px
+		box-shadow: -5px 14px 16px rgba(0, 0, 0, 0.11)
+		border-radius: 9px
+		background: #ffffff			
+.statistic, .match
+	&__title
+		display: flex
+		justify-content: center
+		align-items: baseline
+		margin-bottom: 15px
+		color: #ffffff
+		font-size: 0.8rem
+		font-weight: 600
+		line-height: 0.9rem
+		p
+			margin-left: 15px
+	&__date
+		display: flex
+		justify-content: space-between
+		margin-bottom: 12px
+		&-row
+			position: relative
+			margin-right: 10px
+			width: 48%
+			border-radius: 3px
+			background: $headerbg url('../img/icons/open.svg') 95% center no-repeat
+			transition: background .3s
+			&:hover
+				background: lighten($headerbg, 10%) url('../img/icons/open.svg') 95% center no-repeat
+		&-item								
+			padding: 7px 0
+			padding-left: 32px
+			width: 100%
+			color: $textdouble4
+			font-size: 0.7rem
+			font-weight: 400
+			line-height: 0.8rem	
+			appearance: none
+			border-radius: 3px		
+			background: url('../img/icons/small-calendar.svg') 7% center no-repeat
+			+r(870)
+				padding: 15px 0 0 32px
+				background-position: 10px 15px
+	&__roi
+		margin-bottom: 14px
+		color: #fff
+		text-align: center
+		font-size: 1rem
+		font-weight: 400
+		span
+			display: inline-block
+			margin-left: 12px
+			color: #229500
+		&-text
+			&-mobile
+				display: none
+			+r(870)
+				display: none
+				&-mobile
+					display: block
+					width: 100px
+					margin-top: 10px				
+	&__cicle
+		margin-bottom: 8px
+		background-color: $headerbg
+		border: none
+		outline: none
+		&:active, &:focus
+			border: none
+			outline: none
+		+r(870)
+			margin: 0 10px
+		&-number
+			display: flex
+			justify-content: space-between
+			align-items: center				
+			padding: 11px
+			padding-left: 17px
+			color: #fff
+			font-weight: 500
+			border-radius: 5px
+			background-color: $headerbg
+			cursor: pointer
+			border: none
+			&:active
+				border: none
+		&-row
+			display: flex
+			align-items: center
+		&-check
+			margin-right: 15px
+		&-info
+			&-date
+				display: flex
+				align-items: center
+				margin-bottom: 3px
+				color: #b0b0b0
+				font-size: 0.6rem
+				line-height: 0.7rem
+				p
+					margin-left: 5px
+			p:last-child
+				margin-top: 3px
+				color: $textdouble4
+				font-size: 0.6rem
+				line-height: 0.7rem
+				font-weight: normal
+				span
+					color: #ebebeb
+					font-size: 0.7rem
+		&-persent
+			text-align: center
+			transition: transform .3s
+			p
+				color: #229500
+				font-size: 0.8rem
+		&-match	
+			display: none
+			padding-bottom: 20px		
+			color: #fff
+			font-size: 0.7rem
+			font-weight: 400
+			border-radius: 5px
+			background-color: $headerbg
+		&-item
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 8px
+			&-img
+				position: relative
+				width: 30px
+				text-align: center
+				.team
+					position: absolute
+					top: 50%
+					width: 100px
+					transform: translateY(-50%)
+					&-left
+						right: 40px
+						text-align: right
+					&-right						
+						left: 40px
+						text-align: left
+			&-text
+				width: 30px
+				text-align: center
+.cicle
+	&__team
+		position: relative
+		padding-bottom: 25px
+		+r(870)
+			width: 90%
+			+push-auto
+			margin-bottom: -40px
+			padding: 25px
+			box-shadow: 0 2px 19px rgba(0, 0, 0, 0.15)
+			border-radius: 14px
+			background: #fff
+			z-index: 100
+			&-waiting
+				top: 5px
+				left: 35px
+		&-waiting
+			position: absolute
+			top: -15px
+			left: 10px
+			color: #FFC700
+			font-size: 0.9rem
+			font-weight: bold
+			z-index: 150
+			animation: wait 1s linear infinite alternate
+			&:after
+				+pseudo
+				width: 7px
+				height: 7px
+				left: -14px
+				top: 3px
+				border-radius: 50%
+				background: #FFC700
+		&-title
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-bottom: 5px
+			font-size: 0.8rem
+			font-weight: 700
+			p
+				margin-left: 10px				
+		&-box
+			display: flex
+			justify-content: space-between
+		&-item
+			width: 33%
+			text-align: center
+		&-name
+			margin-top: 10px
+			font-size: 0.8rem
+			font-weight: 600
+		&-info
+			font-size: 0.7rem
+			p
+				font-weight: 600
+				line-height: 1rem
+				&:first-child
+					opacity: 0.4				
+				&:nth-child(2)				
+					font-size: 1rem
+				&:nth-child(3)
+					display: inline-block
+					margin: 5px 0
+					padding: 5px 15px
+					color: #fff
+					font-weight: 300
+					border-radius: 4px
+					background: linear-gradient(133deg, #40EDE6 0%, #2377DF 100%)
+					background-size: cover
+					font-size: 0.7rem
+					text-transform: uppercase
+				&:last-child
+					margin-top: 5px
+					font-size: 1.6rem
+					font-weight: 600
+.indicator
+	+r(870)
+		padding-top: 60px
+		background: #fff
+		&__title
+			display: none
+			&-mobile
+				display: block
+				color: #2a2a2a
+				text-transform: uppercase
+				font-weight: 500
+	&__title
+		position: relative
+		margin-bottom: 20px
+		width: 100%
+		border: 1px solid #979797
+		opacity: 0.4
+		p
+			position: absolute
+			padding: 0 15px
+			background: #fff
+			left: 50%
+			top: 50% 
+			color: #b0b0b0
+			font-size: 0.7rem
+			text-transform: uppercase
+			font-weight: 500
+			transform: translate(-50%, -50%)			
+			z-index: 10
+		&-mobile
+				display: none
+	&__box
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding: 30px 30px
+		+r(870)
+			padding: 30px 0
+	&__persent
+		width: 50%
+		&-img
+			position: relative
+			margin-bottom: 25px
+			width: 135px
+			height: 135px
+			+push-auto
+			.progress 
+				transform: rotate(-90deg)				
+			#nechet
+				stroke-dasharray: 578
+				stroke-dashoffset: 0
+		&-number
+			position: absolute
+			left: 50%
+			top: 50%
+			color: #247cde
+			font-size: 2.4rem
+			font-weight: bold
+			transform: translate(-50%, -50%)
+			span
+				font-size: 1.2rem				
+		&-text
+			display: flex
+			justify-content: space-between
+			width: 80%
+			max-width: 200px
+			+push-auto
+			p
+				color: #b0b0b0
+				font-size: 1rem
+				font-weight: 500
+				span
+					display: inline-block
+					margin-right: 10px
+					width: 15px
+					height: 15px
+					border-radius: 50%
+					vertical-align: middle
+					background: #247cde
+			p:first-child
+				span
+					background: #40ece6
+	&__result
+		width: 50%
+		&-title
+			margin-bottom: 20px
+			font-size: 0.9rem
+			font-weight: 600
+		&-bar
+			position: relative
+			margin-bottom: 20px
+			width: 100%
+			height: 6px
+			border-radius: 2px
+			background: #f0f0f0
+			&-fill
+				position: absolute
+				width: 0
+				height: 100%
+				left: 0
+				top: 0
+				border-radius: 2px
+				background-image: linear-gradient(to right, rgba(36, 124, 222, 1), rgba(247, 66, 400, 1), #F7442B)
+				transition: width 1.5s				
+				img
+					position: absolute
+					display: block
+					right: -7px
+					bottom: 50%
+					z-index: 10
+		&-position
+			display: flex
+			justify-content: space-between
+			margin-bottom: 20px
+			font-size: 0.8rem
+			&-text
+				color: #9c9c9c				
+				font-weight: 400
+			&-persent
+				color: #247cde
+				font-weight: 600
+	&__persent, &__result
+		+r(870)
+			width: 80%
+			+push-auto
+			margin: 10px
+			padding: 20px 10px
+			border-radius: 7px
+			border: 1px solid #efefef
+			background: #fbfbfb
+	&__persent
+		+r(870)
+			padding-bottom: 37px
+.bookmaker
+	&__table
+		width: 100%
+		thead
+			background: #f6f6f6
+			color: #b1b1b1
+			font-size: 0.7rem 
+		th
+			padding: 5px 0
+			width: 25%
+			text-align: center
+			img
+				display: inline-block
+				padding-left: 5px
+				vertical-align: middle
+		th:first-child
+			width: 50%
+			padding-left: 15px
+			text-align: left
+		td
+			padding: 8px 0
+			text-align: center
+			border-bottom: 1px solid #ebebeb
+			p img
+				display: inline-block
+				margin-left: 5px
+		td:first-child
+			text-align: left
+		&-first
+			td
+				padding-top: 20px
+	+r(870)
+		background: #fff
+		&__table
+			display: none
+		.tablemobile
+			display: block
+	.tablemobile
+		display: none
+		padding: 30px 0		
+		&__item
+			width: 100%	
+			margin: 0 5px		
+			padding: 20px 10px
+			border-radius: 7px
+			border: 1px solid #efefef
+			background: #fbfbfb
+			img
+				+push-auto
+				margin-bottom: 15px			
+			table
+				+push-auto
+				th, td
+					width: 80px
+					padding: 5px
+					text-align: center
+				td
+					vertical-align: middle
+					p
+						display: inline-block
+					img
+						display: inline-block
+						margin-left: 10px
+						margin-bottom: 3px
+.match
+	.mobile
+		display: none
+	+r(870)
+		.mobile
+			display: block
+		.desktop
+			display: none		
+	&__game
+		margin-bottom: 10px
+		padding: 25px 0
+		border-radius: 5px
+		background-color: $headerbg
+		font-weight: 600
+		color: #fff
+		+r(870)
+			margin: 10px
+			height: 146px
+	&__score
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 30px		
+		&-item
+			width: 33%
+			text-align: center
+			font-size: 0.6rem			
+			&:nth-child(2)
+				font-size: 2rem
+				font-weight: 300
+			&-final
+				display: flex
+				justify-content: center
+				align-items: center
+				+push-auto
+				margin-top: 10px
+				width: 65px
+				height: 14px
+				font-size: 0.6rem
+				font-weight: bold
+				background: linear-gradient(90deg, #FF5B00 -138.82%, #DB3C10 181.67%)
+				border-radius: 3px
+				text-transform: uppercase	
+		&-img
+			display: inline-block
+			margin-bottom: 5px
+			width: 35px
+			height: 35px
+			img
+				display: block
+				width: auto
+				height: 100%
+				+push-auto		
+		&-slider
+			position: relative
+			width: 60%
+			height: 6px
+			+push-auto
+			font-size: 0.7rem
+			background: rgba(#dedede, .12)
+			border-radius: 3px
+			&-fill
+				position: absolute
+				width: 70%
+				height: 6px
+				top: 0
+				left: 0
+				background: #27a9ff
+				border-radius: 3px
+			&-text1
+				position: absolute
+				top: -2px
+				left: -30px
+			&-text2
+				position: absolute
+				top: -2px
+				right: -50px
+.rightcontent__match	
+	.income__form
+		padding: 25px
+		border-radius: 5px
+		background-color: $headerbg
+		font-weight: 600
+		text-align: center
+		+r(1200)
+			padding: 25px 5px
+		&-item
+			&-bet
+				background: #18191F
+				color: #fff
+				&::placeholder
+					color: #fff
+					opacity: 0.2
+	.income__text
+		color: #fff
+		text-align: left
+		+r(1200)
+			font-size: 0.6rem
+		+r(870)
+			font-size: 0.8rem		
+	.button
+		width: 100%
+		max-width: 480px
+		text-transform: uppercase
+		border-left: 2px solid #2b6596
+		border-top: 2px solid #2b6596
+
+				
+			
+
+
+
+
+
+
+		
+
+				
+

@@ -1,0 +1,218 @@
+/*======================= Стартовые настройки ====================*/
+
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: $formcolor
+	opacity: 0.29
+	font-size: 1.13rem
+	font-weight: 400
+
+*:-moz-placeholder
+	color: $formcolor
+	opacity: 0.29
+	font-size: 1.13rem
+	font-weight: 400
+
+*::-moz-placeholder
+	color: $formcolor
+	opacity: 0.29
+	font-size: 1.13rem
+	font-weight: 400
+
+*:-ms-input-placeholder
+	color: $formcolor
+	opacity: 0.29
+	font-size: 1.13rem
+	font-weight: 400
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+html, body
+	margin: 0
+	padding: 0
+	height: 100%
+
+body
+	font-size: $p
+	min-width: 320px
+	position: relative
+	color: $textmain
+	font-family: $default-font
+	font-weight: normal
+	overflow-x: hidden
+	background: #fff
+
+.clearfix::after 
+  content: ""
+  display: table
+  clear: both
+
+::selection
+	color: #fff
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
+	font-family: 'sf_ui_displayheavy'
+
+h1, .h1
+	font-size: $h1
+	font-family: $default-font
+	font-weight: 700
+	color: #fff
+	letter-spacing: -2px
+	+r(576)
+		font-size: 1.8rem
+
+h2, .h2
+	font-family: $default-font
+	font-size: $h2
+	+r(576)
+		font-size: 1.6rem	
+
+h3, .h3
+	font-size: $h3
+	font-weight: bold
+	
+h4, .h4
+	font-size: $h4
+	font-weight: bold
+
+h5, .h5
+	font-family: $default-font
+	font-size: $h5
+ 
+h6, .h6
+	font-size: $h6
+	color: $textmain
+	font-weight: 800
+	font-family: $default-font
+	text-align: center
+	letter-spacing: 2.42px
+a
+	&:hover
+		text-decoration: none
+
+button, input, select
+	border: none
+	outline: none
+	cursor: pointer
+	&:active, &:focus
+		border: none
+		outline: none
+
+/*==============================ADD CLASS==============================*/
+.alert
+	position: fixed
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 95px
+	background: #AA7614
+	mix-blend-mode: normal
+	opacity: 0.95
+	z-index: 350
+	&__item
+		justify-content: center
+		align-items: center
+		color: #fff
+		font-size: 0.9rem
+		img
+			margin-right: 10px
+	.caution
+		display: flex
+	.error
+		display: none
+	.luck
+		display: none
+	.info
+		display: none
+
+.img-responsive
+	display: block
+	width: 100%
+	height: auto
+
+
+.sectiontitle
+	position: relative
+	text-align: center
+	&:after
+		+pseudo
+		width: 60px
+		height: 5px
+		bottom: -43px
+		left: 50% 
+		transform: translateX(-50%)
+		background: url('../img/title_line.svg') 0 0 no-repeat
+		background-size: cover
+		
+.button
+	position: relative
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	min-width: 145px
+	height: 41px
+	color: #fff
+	border-radius: 4px
+	background: linear-gradient(133deg, rgba(#39d1e4, 1) 0%, rgba(#298fe0, 1) 100%)
+	border: none
+	outline: none
+	cursor: pointer
+	overflow: hidden
+	z-index: 100
+	transition: color .3s
+	&:after
+		+pseudo
+		width: 50px
+		height: 115%
+		left: -50px
+		top: -5%
+		background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0))
+		animation: flash 10s linear infinite
+		z-index: 10
+	&:before
+		+pseudo
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		border-radius: 4px		
+		background: linear-gradient(313deg, #39d1e4 0%, #298fe0 100%)
+		opacity: 1
+		transition: opacity 1s
+		z-index: -1
+	&:hover
+		color: darken(#fff, 10%)
+	&:hover::before
+		opacity: 0
+	&:active
+		box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.5)
+		outline: none
+	&:focus
+		outline: none
+
+.move
+	animation: blink 1s linear infinite
+
+.transform
+	transform-origin: center center
+	transform: rotate(180deg) 
+	span:first-child
+		display: none
+	span:last-child
+		transform: rotate(-45deg) translate(12px, -8px)
+	span:nth-child(2)
+		transform: rotate(45deg) translate(3px, 0px)
+.rotateArrow
+	transform-origin: center-center
+	transform: rotate(180deg)

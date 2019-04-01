@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="20px" viewBox="0 0 94 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-138.821476%" y1="50%" x2="186.477726%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#40EDE6" offset="0%"></stop>
+            <stop stop-color="#2377DF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная" transform="translate(-466.000000, -178.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="наполнение" transform="translate(71.000000, 83.000000)">
+                <g id="середина" transform="translate(245.000000, 0.000000)">
+                    <g id="матч" transform="translate(16.000000, 25.000000)">
+                        <g id="Group-2" transform="translate(125.000000, 25.000000)">
+                            <g id="кнопка-партнерка" transform="translate(9.000000, 45.000000)">
+                                <rect id="Rectangle" x="0" y="0" width="94" height="20" rx="3"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

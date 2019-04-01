@@ -1,0 +1,35 @@
+doctype html
+html(lang='ru')
+	head
+		include layout/head.pug
+		block title
+			title Main
+	body
+
+		//PRELOADER
+		//include layout/preloader.pug
+		
+		.alert
+			.alert__item.caution
+				img(src="img/icons/alert1.svg", alt="Алерт")
+				p Предупреждение!
+			.alert__item.error
+				img(src="img/icons/alert2.svg", alt="Алерт")
+				p Ошибка!
+			.alert__item.luck
+				img(src="img/icons/alert3.svg", alt="Алерт")
+			.alert__item.info
+				img(src="img/icons/alert4.svg", alt="Алерт")
+				p Информация!
+
+		//HEADER
+		include layout/mainheader.pug
+
+		//MAINCONTENT
+		include layout/maincontent.pug
+
+		//FOOTER
+		include layout/mainfooter.pug
+
+		//SCRIPT
+		include layout/scripts.pug

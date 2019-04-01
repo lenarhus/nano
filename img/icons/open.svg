@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="4px" viewBox="0 0 9 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down-sign-to-navigate</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная" transform="translate(-277.000000, -485.000000)" fill="#FFFFFF">
+            <g id="наполнение" transform="translate(71.000000, 83.000000)">
+                <g id="статистика-всех-циклов" transform="translate(11.000000, 15.000000)">
+                    <g id="Group-6" transform="translate(1.000000, 345.000000)">
+                        <g id="цикл" transform="translate(17.000000, 12.000000)">
+                            <g id="arrow-down-sign-to-navigate" transform="translate(177.882812, 30.000000)">
+                                <path d="M4.05671223,4 C3.91294634,4 3.7691982,3.95198115 3.65958957,3.85614533 L0.210415376,0.838877878 C-0.00899715417,0.646942234 -0.00899715417,0.335751488 0.210415376,0.143893495 C0.429739139,-0.0479644984 0.785407933,-0.0479644984 1.00483822,0.143893495 L4.05671223,2.81373864 L7.10860399,0.143986675 C7.32801652,-0.0478713182 7.68364981,-0.0478713182 7.90295582,0.143986675 C8.12247487,0.335844669 8.12247487,0.647035414 7.90295582,0.838971058 L4.45383488,3.85623851 C4.344173,3.95208986 4.20042486,4 4.05671223,4 Z" id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

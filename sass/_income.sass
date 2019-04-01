@@ -1,0 +1,76 @@
+/*============================ INCOME ===========================*/
+.income
+	margin-top: -10px
+	padding-bottom: 85px
+	+r(768)
+		margin-top: -100px
+	.container
+		position: relative
+	&__men1, &__men2
+		position: absolute
+		bottom: -90px
+		+r(992)
+			display: none
+	&__men1
+		left: 0
+	&__men2
+		right: 0
+	.sectiontitle
+		margin-bottom: 100px
+	&__box:first-child
+		+r(768)
+			margin-bottom: 50px
+	&__title
+		margin-bottom: 37px
+	&__text
+		color: #2c2e35
+		font-size: 0.8rem
+		font-weight: 700
+	&__form
+		margin-top: 14px
+		&-calculate, &-result
+			display: flex
+			justify-content: space-between
+			align-items: center			
+		&-calculate
+			margin-bottom: 22px
+		&-result
+			margin-bottom: 16px
+		&-item, &-button
+			width: 48%
+			border-radius: 5px
+		&-item
+			padding-left: 5px
+			padding-top: 5px
+			height: 39px
+			box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.19)
+			color: $textmain
+			font-size: 2.2rem
+			font-family: 'ds-digitalnormal', sans-serif
+			background: #EDEDED
+			text-align: right
+			&::placeholder
+				color: $textmain
+				opacity: 0.15
+				font-size: 2.2rem
+			+r(1200)
+				padding-left: 3px
+
+		&-button
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			padding-top: 5px
+			height: 38px
+			background: $doublelight
+			color: #fff
+			font-size: 0.9rem
+			font-weight: 500
+			text-transform: uppercase
+			border-left: 1px solid $double 
+			border-bottom: 1px solid $double 
+			transition: all .3s
+			&:hover
+				background: darken($doublelight, 10%)
+			
+

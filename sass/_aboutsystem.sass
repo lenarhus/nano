@@ -1,0 +1,54 @@
+/*============================ ABOUTSYSTEM ===========================*/
+.system
+	padding-top: 57px
+	padding-bottom: 165px
+	.sectiontitle
+		margin-bottom: 80px
+	&__cycle
+		margin-bottom: 30px
+		padding-top: 60px
+		+r(992)
+			padding-top: 0
+		&-title
+			margin-bottom: 25px
+		&-text
+			color: $textdouble
+			font-size: 1.06rem
+			line-height: 1.2rem
+			font-weight: 400
+	&__searching
+		+r(768)
+			max-width: 250px
+			+push-auto
+		&-indicate
+			margin-bottom: 15px
+			text-align: center
+		&-text
+			margin-bottom: 27px
+			padding-left: 45px
+			color: $textdouble3
+			font-size: 0.85rem
+			font-weight: 500
+		&-block
+			padding-left: 35px
+		&-item
+			display: block
+			position: relative
+			margin-bottom: 11px
+			opacity: 0.5
+			&-check
+				position: absolute
+				width: 18px
+				height: 18px
+				top: 0
+				left: -45px
+				background: url('../img/search.svg') 0 0 no-repeat
+				background-size: cover
+				opacity: 1
+				transform-origin: center center
+				animation: rotate 1s linear infinite
+		.itemactive
+			opacity: 1
+			.system__searching-item-check
+				background: url('../img/check.svg') 0 0 no-repeat
+				animation: none

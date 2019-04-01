@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="8" viewBox="0 0 15 8">
+	<defs>
+		<path id="87exa" d="M361 504.67V502h14.22v2.67z"/>
+		<path id="87exb" d="M361 507.34v-2.67h14.22v2.67z"/>
+		<path id="87exc" d="M361 510v-2.67h14.22V510z"/>
+	</defs>
+	<g>
+		<g transform="translate(-361 -502)">
+			<g>
+				<use fill="#fff" xlink:href="#87exa"/>
+			</g>
+			<g>
+				<use fill="#0052ff" xlink:href="#87exb"/>
+			</g>
+			<g>
+				<use fill="red" xlink:href="#87exc"/>
+			</g>
+		</g>
+	</g>
+</svg>

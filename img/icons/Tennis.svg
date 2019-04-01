@@ -1,0 +1,9 @@
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sport" transform="translate(-20.000000, -227.000000)" fill="#404248" fill-rule="nonzero">
+            <g id="Tennis" transform="translate(20.000000, 227.000000)">
+                <path d="M9,2.84217094e-14 C3.932,2.84217094e-14 0,3.932 0,9 C0,14.068 4.284,17.996 9.352,18 L16,18 L24,26 L26,26 L26,24 L18,16 L18,9.352 C18,4.284 14.068,2.84217094e-14 9,2.84217094e-14 Z M16,11.412 L16,16 L11,16 L16,11.412 Z M2.294,18 C1.028,18 0,19.026 0,20.294 C0,21.56 1.028,22.588 2.294,22.588 C3.562,22.588 4.588,21.56 4.588,20.294 C4.588,19.028 3.56,18 2.294,18 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

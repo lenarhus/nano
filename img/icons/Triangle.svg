@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="3px" viewBox="0 0 5 3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная" transform="translate(-588.000000, -514.000000)" fill="#17B3FF" fill-rule="nonzero">
+            <g id="наполнение" transform="translate(71.000000, 83.000000)">
+                <g id="середина" transform="translate(245.000000, 0.000000)">
+                    <g id="букмекеры" transform="translate(17.000000, 395.000000)">
+                        <g id="навигация" transform="translate(1.000000, 28.000000)">
+                            <g id="Group-13" transform="translate(219.000000, 2.000000)">
+                                <polygon id="Triangle" points="37.5 6 40 9 35 9"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,85 @@
+/*============================ ANALIZECONTENT ===========================*/
+.analize
+	height: auto
+	.cicle
+		&__team
+			&-status
+				margin-bottom: 20px
+				display: flex
+				justify-content: center
+				color: #fff
+				text-transform: uppercase
+				p
+					text-align: center
+					padding: 8px 0
+					width: 106px
+					height: 23px
+					font-size: 0.6rem
+					border-radius: 3px
+				&-end
+					background: linear-gradient(90deg, #FF5B00 -138.82%, #DB3C10 181.67%)
+				&-wing
+					display: none
+					background: linear-gradient(90deg, #229500 -138.82%, #4BE474 181.67%)
+			&-box
+				margin-bottom: 60px
+				align-items: center
+			&-info
+				p
+					&:first-child
+						margin-bottom: 10px
+						opacity: 1
+						font-size: 1.9rem
+						font-weight: bold			
+					&:nth-child(2)	
+						margin-bottom: 10px			
+						font-size: 1rem
+					&:nth-child(3)
+						display: inline-block
+						margin: 5px 0
+						padding: 5px 15px
+						color: #fff
+						font-weight: 300
+						border-radius: 4px
+						background: linear-gradient(133deg, #40EDE6 0%, #2377DF 100%)
+						background-size: cover
+						font-size: 0.7rem
+						text-transform: uppercase
+			&-analized
+				padding-bottom: 30px
+				text-align: center
+				+r(768)
+					&-logo
+						width: 35px
+						height: 32px
+					&-text
+						font-size: 0.8rem
+				&-logo
+					+push-auto
+					margin-bottom: 16px
+					width: 70px
+					height: 64px
+				&-text
+					display: block
+					position: relative
+					+push-auto
+					width: 305px
+					font-size: 1.2rem
+					font-weight: bold
+					+r(768)
+						width: 205px
+					.textDotted
+						position: absolute
+						width: 18px
+						height: 100%
+						left: calc(100% + 5px)
+						bottom: 0
+						text-align-last: auto
+						overflow: hidden
+						animation: width 1s linear infinite alternate
+						+r(768)
+							animation: width1 1s linear infinite alternate
+	&__match
+		.button
+			margin-bottom: 16px
+				

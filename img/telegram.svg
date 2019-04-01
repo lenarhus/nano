@@ -1,0 +1,11 @@
+<svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M6.2505 8.44497L12.065 13L15 0L0 6.12221L4.56433 7.69089L12.8943 1.89321L6.2505 8.44497Z" fill="white"/>
+	<defs>
+		<path id="tail" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.53996L1.20056 10L1.61937 6.26051L8 0L0 5.53996Z" fill="#D2D2D7"/>
+	</defs>
+	<defs>
+		<path id="tail1" fill-rule="evenodd" clip-rule="evenodd" d="M2 1.51314L0 4L0.375003 0L2 1.51314Z" fill="#B9B9BE"/>
+	</defs>
+	<use xlink:href="#tail" x="4.3" y="2.4"/>
+	<use xlink:href="#tail1" x="5.8" y="8"/>	
+</svg>

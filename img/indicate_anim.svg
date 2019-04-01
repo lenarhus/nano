@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+	<defs>
+		<circle id="circle" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle2" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle3" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle4" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle5" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle6" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle7" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle8" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle9" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle10" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle11" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<circle id="circle12" r="0.5" cx="0" cy="0" fill="none" stroke-width="1" stroke="url(#grad)"/>
+		<defs>
+			<linearGradient id="grad" x1="34" x2="17" y1="17" y2="-1" gradientUnits="userSpaceOnUse">
+				<stop offset="0" stop-color="#89dff6"/>
+				<stop offset="1" stop-color="#4ac0ec"/>
+			</linearGradient>
+		</defs>
+	</defs>
+	<use xlink:href="#circle" x="17" y="3">
+		<animate xlink:href="#circle" attributeName="r" from="0.5" to="2.5" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>
+	<use xlink:href="#circle2" x="24" y="5">
+		<animate xlink:href="#circle2" attributeName="r" from="0.5" to="2.5" begin=".11s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>
+	<use xlink:href="#circle3" x="29.5" y="10">
+		<animate xlink:href="#circle3" attributeName="r" from="0.5" to="2.5" begin="0.22s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>
+	<use xlink:href="#circle4" x="31" y="17">
+		<animate xlink:href="#circle4" attributeName="r" from="0.5" to="2.5" begin="0.33s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>
+	<use xlink:href="#circle5" x="29.5" y="24">
+		<animate xlink:href="#circle5" attributeName="r" from="0.5" to="2.5" begin="0.44s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>
+	<use xlink:href="#circle6" x="24" y="29">
+		<animate xlink:href="#circle6" attributeName="r" from="0.5" to="2.5" begin="0.55s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>
+	<use xlink:href="#circle7" x="17" y="31">
+		<animate xlink:href="#circle7" attributeName="r" from="0.5" to="2.5" begin="0.66s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>
+	<use xlink:href="#circle8" x="10" y="29">
+		<animate xlink:href="#circle8" attributeName="r" from="0.5" to="2.5" begin="0.77s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>
+	<use xlink:href="#circle9" x="4.5" y="24">
+		<animate xlink:href="#circle9" attributeName="r" from="0.5" to="2.5" begin="0.88s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>	
+	<use xlink:href="#circle10" x="3" y="17">
+		<animate xlink:href="#circle10" attributeName="r" from="0.5" to="2.5" begin="0.99s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>
+	<use xlink:href="#circle11" x="4.5" y="10">
+		<animate xlink:href="#circle11" attributeName="r" from="0.5" to="2.5" begin="1.1s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>
+	<use xlink:href="#circle12" x="10" y="5">
+		<animate xlink:href="#circle12" attributeName="r" from="0.5" to="2.5" begin="1.21s" dur="1.1s" repeatCount="indefinite"></animate>
+	</use>	
+</svg>
