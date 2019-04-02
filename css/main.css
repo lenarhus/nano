@@ -109,11 +109,11 @@ body {
 }
 
 ::-moz-selection {
-  color: #fff;
+  color: #247cde;
 }
 
 ::selection {
-  color: #fff;
+  color: #247cde;
 }
 
 h1,
@@ -2488,13 +2488,21 @@ select:focus {
   transform: rotate(-90deg);
 }
 
-.indicator__persent-img #nechet {
-  stroke-dasharray: 578;
-  stroke-dashoffset: 0;
+.indicator__persent-img #chet {
+  stroke-dasharray: 577;
+  stroke-dashoffset: -577;
 }
 
 .indicator__persent-number {
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   left: 50%;
   top: 50%;
   color: #247cde;
@@ -2538,11 +2546,11 @@ select:focus {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   vertical-align: middle;
-  background: #247cde;
+  background: #40ece6;
 }
 
 .indicator__persent-text p:first-child span {
-  background: #40ece6;
+  background: #247cde;
 }
 
 .indicator__result {

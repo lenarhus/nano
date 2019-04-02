@@ -364,11 +364,13 @@
 			+push-auto
 			.progress 
 				transform: rotate(-90deg)				
-			#nechet
-				stroke-dasharray: 578
-				stroke-dashoffset: 0
+			#chet
+				stroke-dasharray: 577
+				stroke-dashoffset: -577
 		&-number
 			position: absolute
+			display: flex
+			align-items: baseline
 			left: 50%
 			top: 50%
 			color: #247cde
@@ -394,10 +396,10 @@
 					height: 15px
 					border-radius: 50%
 					vertical-align: middle
-					background: #247cde
+					background: #40ece6
 			p:first-child
 				span
-					background: #40ece6
+					background: #247cde
 	&__result
 		width: 50%
 		&-title

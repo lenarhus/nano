@@ -161,9 +161,14 @@ $(document).ready(function (){
 		$('.indicator__result-bar-fill').css("width", "70%");
 	}, 2000);
 
-	setTimeout(function(){                                               // ANIMATE FIRE
-		$('#nechet').animate({strokeDashoffset: "-433"}, 1000);
-	}, 2000);
+  setTimeout(function(){
+    if (!$('#chet').length){
+      return;
+    } 
+  	var path = $('#chet').get(0).getTotalLength();  
+    var persentSearch = Math.floor($('.indicator__persent-number-search').first().text());                                             // ANIMATE FIRE
+    $('#chet').animate({strokeDashoffset: -path - path / 100 * persentSearch}, 1000);
+  }, 2000);
 
     $('.mainheader__user-button').on('click', function(){
         if($('.mainheader__user-menu').width() == 0){
